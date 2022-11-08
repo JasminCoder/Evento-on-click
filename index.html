@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento OnClick</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+
+        <div class="menu"> <!--menu nav-->
+            <h1 class="menu_title">Dojonary</h1>
+            <input type="text" name="input_texto" placeholder="Search" class="barra">
+            <button class="btn" onclick="logOut(this)">Login</button><!--boton login-->
+        </div>
+        <br>
+
+        <div class="body">
+                    
+            <div class="left_column"> <!--columna izq-->
+
+                <div class="ninja1"> <!--bloque 1-->
+                    <h1>ninja</h1>
+                    <div class="nin1">
+                        <p>noun
+                        <br>
+                        plural: ninjas
+                        </p>
+                        <p>practitioner skilled in the
+                        <br>
+                        <a href="#">Japanese</a> art of <a href="#">ninjutsu</a>
+                        </p>
+                    </div>        
+                    <div><button class="likes" onclick="liked()">13 likes</button></div> <!--boton-->
+                </div>
+                <br>
+                <div class="ninja2"> <!--bloque 2-->
+                    <h1>ninja</h1>
+                    <div class="nin2">
+                        <p>noun
+                        <br>
+                        plural: <em>ninjas</em>
+                        </p>
+                        <p>A<a href="#">programmer</a> who breaks
+                        <br>
+                        down problems whith <a href="#">zen</a>-like focus
+                        </p>
+                    </div>
+                    <div><button class="likes" onclick="liked()">37 likes</button></div> <!--boton-->
+                </div>
+            </div>
+
+
+            <div class="right_column"> <!--columna derecha-->
+                <div class="dojo">
+                    <p><h3>Dojonary is 
+                    <br>
+                    defined by<strong>YOU</strong> 
+                    </h3></p>
+                </div>
+                        
+                <button class="add" onclick="remove(this)" >Add Definition</button> <!--boton-->
+            </div>
+        </div>
+    </div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
